@@ -5,8 +5,7 @@ module.exports = function (string1, string2) {
   let noSpecialChar2 = noSpace2.replace(/[^a-zA-Z ]/g, "")
 
   if(noSpecialChar1.length !== noSpecialChar2.length){
-    console.log("Invalid")
-    return 
+    return false
   }
 
   let str1 = noSpecialChar1.toLowerCase().split('').sort().join('');
